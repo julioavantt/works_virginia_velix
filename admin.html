@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contenidos</title>
+ </head>
+ <body>
+  <h1>Contenidos</h1>
+  <ul id="lista"></ul>
+
+  <h2>Agregar contenido</h2>
+  <form id="formulario">
+   <input type="text" id="titulo" placeholder="Título" required />
+   <input type="text" id="imagen" placeholder="Imagen" required />
+   <input type="number" id="precio" placeholder="Precio" required />
+   <input type="checkbox" id="destacado" placeholder="Destacado" />
+   <textarea id="descripcion" placeholder="Descripción"></textarea>
+   <input type="text" id="frase_gancho" placeholder="Frase gancho" required />
+   <button type="submit">Guardar</button>
+  </form>
+  <p id="mensaje"></p>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/form.js"></script>
+ </body>
+</html>
