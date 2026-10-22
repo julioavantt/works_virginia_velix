@@ -18,6 +18,25 @@
  border-radius: 5px;
 }
 
-body {
- /* background: url("../assets/img/bg.jpg") center/contain no-repeat; */
+#logo_tienda {
+ animation: balanceo-infinito 8s ease-in-out infinite;
+ transform-origin: center;
+}
+
+@keyframes balanceo-infinito {
+ 0% {
+  transform: rotate(0deg);
+ }
+ 25% {
+  transform: rotate(-10deg); /* Gira a la izquierda */
+ }
+ 50% {
+  transform: rotate(0deg); /* Vuelve al centro */
+ }
+ 75% {
+  transform: rotate(10deg); /* Gira a la derecha */
+ }
+ 100% {
+  transform: rotate(0deg); /* Regresa al centro para reiniciar el ciclo */
+ }
 }
