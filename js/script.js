@@ -30,13 +30,22 @@ async function cargar() {
  );
  destacado.querySelector("#precio").textContent =
   `$${item_destacado[0].precio.toLocaleString("es-AR")}`;
+ destacado.querySelector(".line-through").textContent =
+  `$${(item_destacado[0].precio + item_destacado[0].ahorro).toLocaleString("es-AR")}`;
+ destacado.querySelector(".rounded").textContent =
+  `Ahorrás $${item_destacado[0].ahorro.toLocaleString("es-AR")}`;
  destacado.querySelector("#bait").textContent = acotarTexto(
   item_destacado[0].frase_gancho,
  );
 
+ const id = item_destacado[0].id;
+
  const lista = document.getElementById("lista");
- data.forEach((d) => {
-  let card = `<div
+
+ data
+  .filter((d) => d.id !== id)
+  .forEach((d) => {
+   let card = `<div
      class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-pink-500/50 transition duration-300 glow-effect flex flex-col"
     >
      <div class="relative h-60 overflow-hidden bg-slate-950">
@@ -63,7 +72,7 @@ async function cargar() {
       <div>
        <div class="flex items-baseline space-x-2 mb-4">
         <span class="text-2xl font-black text-pink-400">$${d.precio.toLocaleString("es-AR")}</span>
-        <span class="text-sm text-slate-500 line-through">$32.000</span>
+        <span class="text-sm text-slate-500 line-through">$${(d.precio + d.ahorro).toLocaleString("es-AR")}</span>
        </div>
        <a
         href="https://wa.me/5491100000000?text=Hola!%20Quiero%20comprar%20el%20Smartwatch%20Sport%20V2"
@@ -78,8 +87,8 @@ async function cargar() {
     </div>
 `;
 
-  lista.insertAdjacentHTML("beforeend", card);
- });
+   lista.insertAdjacentHTML("beforeend", card);
+  });
 }
 
 cargar();
