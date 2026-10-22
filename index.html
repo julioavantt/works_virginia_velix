@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing de Ofertas - Producto Destacado</title>
+  <!-- Tailwind CSS desde CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome para íconos -->
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+   .glow-effect {
+    box-shadow: 0 0 25px rgba(219, 39, 119, 0.2);
+   }
+   .glow-effect:hover {
+    box-shadow: 0 0 35px rgba(219, 39, 119, 0.5);
+   }
+   .hero-glow {
+    box-shadow: 0 0 50px rgba(236, 72, 153, 0.25);
+   }
+  </style>
+ </head>
+ <body
+  class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-pink-500 selection:text-white"
+ >
+  <!-- BARRA DE NAVEGACIÓN -->
+  <nav
+   class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur-md border-b border-slate-800 px-6 py-4 flex justify-between items-center"
+  >
+   <div class="flex items-center space-x-2">
+    <span
+     class="text-2xl font-black bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-400 bg-clip-text text-transparent"
+    >
+     OFERTAS<span class="text-pink-500">.LIVE</span>
+    </span>
+   </div>
+   <a
+    href="https://wa.me/5491100000000?text=Hola!%20Quiero%20consultar%20por%20las%20ofertas"
+    target="_blank"
+    class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-4 py-2 rounded-full text-xs md:text-sm flex items-center gap-2 transition"
+   >
+    <i class="fab fa-whatsapp text-lg"></i>
+    <span>WhatsApp directo</span>
+   </a>
+  </nav>
+
+  <!-- HERO SECTION / PRODUCTO DESTACADO DEL MES -->
+  <section
+   class="relative overflow-hidden py-12 px-6 border-b border-slate-800/60"
+  >
+   <!-- Luces neón de fondo -->
+   <div
+    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-pink-600/15 rounded-full blur-[120px] pointer-events-none"
+   ></div>
+
+   <div class="max-w-6xl mx-auto relative z-10">
+    <div class="text-center mb-8">
+     <span
+      class="inline-flex items-center gap-2 py-1 px-4 rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/30 text-xs font-bold uppercase tracking-widest animate-pulse"
+     >
+      🔥 Oferta Estelar de la Semana
+     </span>
+    </div>
+
+    <!-- TARJETA DEL PRODUCTO DESTACADO -->
+    <div
+     class="bg-slate-900/90 border border-pink-500/40 rounded-3xl p-6 sm:p-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center hero-glow"
+    >
+     <!-- Columna Imagen -->
+     <div
+      class="relative h-72 sm:h-96 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 group"
+     >
+      <span
+       class="absolute top-4 left-4 z-10 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-black text-sm px-4 py-1.5 rounded-full uppercase shadow-xl"
+      >
+       50% OFF - IMPERDIBLE
+      </span>
+      <img
+       src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&q=80"
+       alt="Auriculares Wireless Pro Studio"
+       class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+      />
+     </div>
+
+     <!-- Columna Información -->
+     <div class="flex flex-col justify-between">
+      <div>
+       <div class="flex items-center gap-2 text-amber-400 text-sm mb-2">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <span class="text-slate-400 text-xs ml-2">(128 valoraciones)</span>
+       </div>
+       <h1
+        class="text-3xl sm:text-5xl font-black text-slate-100 mb-4 leading-tight"
+       >
+        Auriculares Wireless Pro Studio
+       </h1>
+       <p class="text-slate-300 text-base sm:text-lg mb-6 leading-relaxed">
+        Cancelación activa de ruido, hasta 40 horas de batería continua y
+        almohadillas acolchadas ergonómicas. ¡Envío express gratis comprando
+        hoy!
+       </p>
+      </div>
+
+      <!-- Precios y Contador de URGENCIA -->
+      <div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-5 mb-6">
+       <div class="flex items-baseline gap-3 mb-2">
+        <span class="text-3xl sm:text-4xl font-black text-pink-400"
+         >$29.900</span
+        >
+        <span class="text-lg text-slate-500 line-through">$59.800</span>
+        <span
+         class="text-xs bg-emerald-500/20 text-emerald-400 font-bold px-2 py-0.5 rounded"
+         >Ahorras $29.900</span
+        >
+       </div>
+       <p
+        class="text-xs text-pink-300/80 font-medium flex items-center gap-1.5"
+       >
+        <i class="fas fa-clock"></i> La oferta termina en unas pocas horas o
+        hasta agotar stock.
+       </p>
+      </div>
+
+      <!-- Botón de Compra Directa -->
+      <a
+       href="https://wa.me/5491100000000?text=Hola!%20Quiero%20aprovechar%20la%20OFERTA%20DESTACADA%20de%20los%20Auriculares%20Wireless%20Pro%20Studio"
+       target="_blank"
+       class="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-slate-950 font-black text-lg py-4 px-6 rounded-xl transition duration-300 shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-3"
+      >
+       <i class="fab fa-whatsapp text-2xl"></i>
+       <span>PEDIR AHORA POR WHATSAPP</span>
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <!-- GRILLA DE OTROS PRODUCTOS EN OFERTA -->
+  <section id="ofertas" class="max-w-6xl mx-auto py-16 px-6">
+   <div class="text-center mb-12">
+    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-100 mb-2">
+     Otras Ofertas Disponibles
+    </h2>
+    <p class="text-slate-400">
+     Descubre otros productos en promoción y haz tu pedido al instante
+    </p>
+   </div>
+
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- PRODUCTO 2 -->
+    <div
+     class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-pink-500/50 transition duration-300 glow-effect flex flex-col"
+    >
+     <div class="relative h-60 overflow-hidden bg-slate-950">
+      <span
+       class="absolute top-3 left-3 z-10 bg-purple-600 text-white font-black text-xs px-3 py-1 rounded-full uppercase shadow-lg"
+      >
+       Más Vendido
+      </span>
+      <img
+       src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80"
+       alt="Smartwatch Sport V2"
+       class="w-full h-full object-cover hover:scale-105 transition duration-500"
+      />
+     </div>
+     <div class="p-6 flex-1 flex flex-col justify-between">
+      <div>
+       <h3 class="font-bold text-xl mb-2 text-slate-100">
+        Smartwatch Sport V2
+       </h3>
+       <p class="text-slate-400 text-sm mb-4">
+        Monitoreo ritmo cardíaco, GPS integrado y pantalla AMOLED alta
+        resolución.
+       </p>
+      </div>
+      <div>
+       <div class="flex items-baseline space-x-2 mb-4">
+        <span class="text-2xl font-black text-pink-400">$24.900</span>
+        <span class="text-sm text-slate-500 line-through">$32.000</span>
+       </div>
+       <a
+        href="https://wa.me/5491100000000?text=Hola!%20Quiero%20comprar%20el%20Smartwatch%20Sport%20V2"
+        target="_blank"
+        class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition flex items-center justify-center gap-2"
+       >
+        <i class="fab fa-whatsapp text-lg"></i>
+        <span>Pedir por WhatsApp</span>
+       </a>
+      </div>
+     </div>
+    </div>
+
+    <!-- PRODUCTO 3 -->
+    <div
+     class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-pink-500/50 transition duration-300 glow-effect flex flex-col"
+    >
+     <div class="relative h-60 overflow-hidden bg-slate-950">
+      <span
+       class="absolute top-3 left-3 z-10 bg-pink-600 text-white font-black text-xs px-3 py-1 rounded-full uppercase shadow-lg"
+      >
+       Últimas Unidades
+      </span>
+      <img
+       src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&q=80"
+       alt="Zapatillas Urban Style"
+       class="w-full h-full object-cover hover:scale-105 transition duration-500"
+      />
+     </div>
+     <div class="p-6 flex-1 flex flex-col justify-between">
+      <div>
+       <h3 class="font-bold text-xl mb-2 text-slate-100">
+        Zapatillas Urban Style
+       </h3>
+       <p class="text-slate-400 text-sm mb-4">
+        Diseño ultraligero y cómodo para uso diario con máxima amortiguación.
+       </p>
+      </div>
+      <div>
+       <div class="flex items-baseline space-x-2 mb-4">
+        <span class="text-2xl font-black text-pink-400">$35.000</span>
+        <span class="text-sm text-slate-500 line-through">$45.000</span>
+       </div>
+       <a
+        href="https://wa.me/5491100000000?text=Hola!%20Quiero%20comprar%20las%20Zapatillas%20Urban%20Style"
+        target="_blank"
+        class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition flex items-center justify-center gap-2"
+       >
+        <i class="fab fa-whatsapp text-lg"></i>
+        <span>Pedir por WhatsApp</span>
+       </a>
+      </div>
+     </div>
+    </div>
+
+    <!-- PRODUCTO 4 -->
+    <div
+     class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-pink-500/50 transition duration-300 glow-effect flex flex-col"
+    >
+     <div class="relative h-60 overflow-hidden bg-slate-950">
+      <span
+       class="absolute top-3 left-3 z-10 bg-indigo-600 text-white font-black text-xs px-3 py-1 rounded-full uppercase shadow-lg"
+      >
+       Lanzamiento
+      </span>
+      <img
+       src="https://images.unsplash.com/photo-1585338107529-13afc5f02586?w=600&q=80"
+       alt="Lámpara Smart LED RGB"
+       class="w-full h-full object-cover hover:scale-105 transition duration-500"
+      />
+     </div>
+     <div class="p-6 flex-1 flex flex-col justify-between">
+      <div>
+       <h3 class="font-bold text-xl mb-2 text-slate-100">Lámpara Smart RGB</h3>
+       <p class="text-slate-400 text-sm mb-4">
+        Control por app y voz, 16 millones de colores e integración con
+        ecosistemas smart.
+       </p>
+      </div>
+      <div>
+       <div class="flex items-baseline space-x-2 mb-4">
+        <span class="text-2xl font-black text-pink-400">$14.500</span>
+        <span class="text-sm text-slate-500 line-through">$19.900</span>
+       </div>
+       <a
+        href="https://wa.me/5491100000000?text=Hola!%20Quiero%20comprar%20la%20L%C3%A1mpara%20Smart%20RGB"
+        target="_blank"
+        class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition flex items-center justify-center gap-2"
+       >
+        <i class="fab fa-whatsapp text-lg"></i>
+        <span>Pedir por WhatsApp</span>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <section id="contacto" class="max-w-4xl mx-auto py-12 px-6">
+   <div
+    class="bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl"
+   >
+    <div class="max-w-xl mx-auto text-center mb-8">
+     <h2 class="text-3xl font-extrabold mb-2 text-slate-100">
+      ¿Tienes alguna duda o consulta?
+     </h2>
+     <p class="text-slate-400 text-sm">
+      Escríbenos y nuestro equipo te responderá rápidamente.
+     </p>
+    </div>
+
+    <form
+     action="#"
+     method="POST"
+     onsubmit="
+      event.preventDefault();
+      alert('¡Gracias por tu mensaje! Nos contactaremos a la brevedad.');
+     "
+     class="max-w-xl mx-auto space-y-4"
+    >
+     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <input
+       type="text"
+       placeholder="Tu Nombre"
+       required
+       class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-pink-500"
+      />
+      <input
+       type="tel"
+       placeholder="Tu WhatsApp"
+       required
+       class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-pink-500"
+      />
+     </div>
+     <textarea
+      rows="3"
+      placeholder="¿Qué producto te interesa o cuál es tu consulta?"
+      required
+      class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-pink-500"
+     ></textarea>
+     <button
+      type="submit"
+      class="w-full bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-bold py-4 rounded-xl transition shadow-lg"
+     >
+      Enviar Consulta
+     </button>
+    </form>
+   </div>
+  </section>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a
+   href="https://wa.me/5491100000000?text=Hola!%20Tengo%20una%20consulta"
+   target="_blank"
+   class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-400 text-slate-950 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl text-3xl z-50 transition transform hover:scale-110"
+  >
+   <i class="fab fa-whatsapp"></i>
+  </a>
+ </body>
+</html>
