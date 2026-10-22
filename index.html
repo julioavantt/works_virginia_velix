@@ -4,37 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Landing de Ofertas - Producto Destacado</title>
-  <!-- Tailwind CSS desde CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- FontAwesome para íconos -->
   <link
    rel="stylesheet"
    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   />
-  <style>
-   .glow-effect {
-    box-shadow: 0 0 25px rgba(219, 39, 119, 0.2);
-   }
-   .glow-effect:hover {
-    box-shadow: 0 0 35px rgba(219, 39, 119, 0.5);
-   }
-   .hero-glow {
-    box-shadow: 0 0 50px rgba(236, 72, 153, 0.25);
-   }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
  </head>
  <body
   class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-pink-500 selection:text-white"
  >
-  <!-- BARRA DE NAVEGACIÓN -->
   <nav
    class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur-md border-b border-slate-800 px-6 py-4 flex justify-between items-center"
   >
    <div class="flex items-center space-x-2">
     <span
      class="text-2xl font-black bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-400 bg-clip-text text-transparent"
-    >
-     OFERTAS<span class="text-pink-500">.LIVE</span>
+     ><img id="logo" src="assets/img/logo.avif" alt="Logo" /> La tienda de
+     Virginia | OFERTAS<span class="text-pink-500">.LIVE</span>
     </span>
    </div>
    <a
@@ -46,12 +33,10 @@
     <span>WhatsApp directo</span>
    </a>
   </nav>
-
-  <!-- HERO SECTION / PRODUCTO DESTACADO DEL MES -->
   <section
+   id="destacado"
    class="relative overflow-hidden py-12 px-6 border-b border-slate-800/60"
   >
-   <!-- Luces neón de fondo -->
    <div
     class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-pink-600/15 rounded-full blur-[120px] pointer-events-none"
    ></div>
@@ -64,22 +49,20 @@
       🔥 Oferta Estelar de la Semana
      </span>
     </div>
-
-    <!-- TARJETA DEL PRODUCTO DESTACADO -->
     <div
      class="bg-slate-900/90 border border-pink-500/40 rounded-3xl p-6 sm:p-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center hero-glow"
     >
-     <!-- Columna Imagen -->
      <div
       class="relative h-72 sm:h-96 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 group"
      >
       <span
+       id="bait"
        class="absolute top-4 left-4 z-10 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-black text-sm px-4 py-1.5 rounded-full uppercase shadow-xl"
       >
        50% OFF - IMPERDIBLE
       </span>
       <img
-       src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&q=80"
+       src=""
        alt="Auriculares Wireless Pro Studio"
        class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
       />
@@ -94,26 +77,18 @@
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
-        <span class="text-slate-400 text-xs ml-2">(128 valoraciones)</span>
        </div>
        <h1
         class="text-3xl sm:text-5xl font-black text-slate-100 mb-4 leading-tight"
-       >
-        Auriculares Wireless Pro Studio
-       </h1>
-       <p class="text-slate-300 text-base sm:text-lg mb-6 leading-relaxed">
-        Cancelación activa de ruido, hasta 40 horas de batería continua y
-        almohadillas acolchadas ergonómicas. ¡Envío express gratis comprando
-        hoy!
-       </p>
+       ></h1>
+       <p class="text-slate-300 text-base sm:text-md mb-6 leading-relaxed"></p>
       </div>
-
-      <!-- Precios y Contador de URGENCIA -->
       <div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-5 mb-6">
        <div class="flex items-baseline gap-3 mb-2">
-        <span class="text-3xl sm:text-4xl font-black text-pink-400"
-         >$29.900</span
-        >
+        <span
+         id="precio"
+         class="text-3xl sm:text-4xl font-black text-pink-400"
+        ></span>
         <span class="text-lg text-slate-500 line-through">$59.800</span>
         <span
          class="text-xs bg-emerald-500/20 text-emerald-400 font-bold px-2 py-0.5 rounded"
@@ -281,8 +256,6 @@
     </div>
    </div>
   </section>
-
-  <!-- FORMULARIO DE CONTACTO -->
   <section id="contacto" class="max-w-4xl mx-auto py-12 px-6">
    <div
     class="bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl"
@@ -334,8 +307,6 @@
     </form>
    </div>
   </section>
-
-  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
   <a
    href="https://wa.me/5491100000000?text=Hola!%20Tengo%20una%20consulta"
    target="_blank"
@@ -343,5 +314,8 @@
   >
    <i class="fab fa-whatsapp"></i>
   </a>
+  <ul id="lista"></ul>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/script.js"></script>
  </body>
 </html>
