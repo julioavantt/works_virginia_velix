@@ -49,57 +49,110 @@
       🔥 Oferta Estelar de la Semana
      </span>
     </div>
-    <div
-     class="bg-slate-900/90 border border-pink-500/40 rounded-3xl p-6 sm:p-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center hero-glow"
-    >
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-stretch">
      <div
-      class="relative h-72 sm:h-96 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 group"
+      id="destacado"
+      class="lg:col-span-3 bg-slate-900/90 border border-pink-500/40 rounded-3xl p-3 sm:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center hero-glow"
      >
-      <span
-       id="bait"
-       class="absolute top-4 left-4 z-10 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-black text-sm px-4 py-1.5 rounded-full uppercase shadow-xl"
-      >
-       50% OFF - IMPERDIBLE
-      </span>
-      <img
-       src=""
-       alt="Auriculares Wireless Pro Studio"
-       class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-      />
-     </div>
-     <div class="flex flex-col justify-between">
-      <div>
-       <h1
-        class="text-3xl sm:text-5xl font-black text-slate-100 mb-4 leading-tight"
-       ></h1>
-       <p class="text-slate-300 text-base sm:text-md mb-6 leading-relaxed"></p>
-      </div>
-      <div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-5 mb-6">
-       <div class="flex items-baseline gap-3 mb-2">
-        <span
-         id="precio"
-         class="text-3xl sm:text-4xl font-black text-pink-400"
-        ></span>
-        <span class="text-lg text-slate-500 line-through"></span>
-        <span
-         class="text-xs bg-emerald-500/20 text-emerald-400 font-bold px-2 py-0.5 rounded"
-         >Ahorras $29.900</span
-        >
-       </div>
-       <p
-        class="text-xs text-pink-300/80 font-medium flex items-center gap-1.5"
+      <div class="relative rounded-2xl overflow-hidden">
+       <span
+        id="bait"
+        class="absolute top-3 left-3 z-10 bg-fuchsia-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
        >
-        <i class="fas fa-clock"></i> La oferta termina en unas pocas horas o
-        hasta agotar stock.
+       </span>
+       <img
+        src=""
+        alt="Destacado"
+        class="w-full h-full object-cover rounded-2xl"
+       />
+      </div>
+      <div class="flex flex-col justify-between space-y-4">
+       <div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-3"></h1>
+        <p class="text-slate-400 text-sm leading-relaxed"></p>
+       </div>
+       <div
+        class="bg-slate-950/60 border border-slate-800 rounded-2xl p-4 space-y-2"
+       >
+        <div class="flex items-baseline gap-3">
+         <span
+          id="precio"
+          class="text-2xl sm:text-3xl font-black text-pink-500"
+         ></span>
+         <span class="text-sm text-slate-500 line-through"></span>
+         <span
+          class="text-xs bg-emerald-950 text-emerald-400 font-semibold px-2 py-0.5 rounded border border-emerald-800"
+         ></span>
+        </div>
+        <p class="text-xs text-pink-300 flex items-center gap-1">
+         ⏱ La oferta termina en unas pocas horas o hasta agotar stock.
+        </p>
+       </div>
+       <a
+        href="https://wa.me/..."
+        target="_blank"
+        class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-6 rounded-xl text-center transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-900/30"
+       >
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"></svg>
+        PEDIR AHORA POR WHATSAPP
+       </a>
+      </div>
+     </div>
+     <!-- <div
+      id="tienda"
+      class="lg:col-span-1 bg-slate-900/90 border border-pink-500/40 rounded-3xl p-6 sm:p-10 flex flex-col items-center justify-center text-center hero-glow"
+     >
+      <div class="space-y-4 max-w-sm">
+       <h3 class="text-2xl sm:text-3xl font-extrabold text-white">
+        Visita mi tienda
+       </h3>
+       <p class="text-slate-400 text-sm leading-relaxed">
+        Descubre todas nuestras láminas exclusivas, prints y productos diseñados
+        especialmente para vos.
+       </p>
+       <a
+        href="https://tu-tienda.com"
+        target="_blank"
+        class="inline-block w-full bg-pink-600 hover:bg-pink-500 text-white font-bold py-3.5 px-6 rounded-xl text-center transition shadow-lg shadow-pink-900/30"
+       >
+        IR A LA TIENDA &rarr;
+       </a>
+      </div>
+     </div> -->
+
+     <div
+      class="lg:col-span-1 bg-slate-900/90 border border-pink-500/40 rounded-3xl p-6 sm:p-8 flex flex-col items-center justify-between text-center hero-glow relative overflow-hidden group"
+     >
+      <!-- Glow decorativo de fondo -->
+      <div
+       class="absolute -top-12 -right-12 w-32 h-32 bg-pink-500/10 rounded-full blur-2xl group-hover:bg-pink-500/20 transition-all duration-500"
+      ></div>
+
+      <!-- Chip flotante arriba -->
+      <span
+       class="bg-pink-500/20 border border-pink-500/40 text-pink-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 flex items-center gap-1.5"
+      >
+       🐾 Tienda de Mascotas
+      </span>
+      <div
+       class="my-3 relative w-32 h-32 sm:w-36 sm:h-36 flex items-center justify-center rounded-2xl p-4"
+      >
+       <img src="assets/img/cat.png" alt="Tienda" />
+      </div>
+      <div class="space-y-2 mb-6">
+       <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+        Encontrá lo mejor y al mejor precio para tus amadas mascotas en La
+        tienda de Virginia!
        </p>
       </div>
       <a
-       href="https://wa.me/5491100000000?text=Hola!%20Quiero%20aprovechar%20la%20OFERTA%20DESTACADA%20de%20los%20Auriculares%20Wireless%20Pro%20Studio"
+       href="https://siouxie2015.somosbigo.com/"
        target="_blank"
-       class="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-slate-950 font-black text-lg py-4 px-6 rounded-xl transition duration-300 shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-3"
+       rel="noopener"
+       class="w-full bg-pink-600 hover:bg-pink-500 text-white font-bold py-3 px-5 rounded-xl text-center transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-pink-900/40 hover:shadow-pink-600/30"
       >
-       <i class="fab fa-whatsapp text-2xl"></i>
-       <span>PEDIR AHORA POR WHATSAPP</span>
+       <span>VISITAR TIENDA</span>
+       <span class="text-lg">&rarr;</span>
       </a>
      </div>
     </div>
